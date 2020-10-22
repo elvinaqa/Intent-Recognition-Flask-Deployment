@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Intent Classification with DeepPavlov, BERT, RASANLU, SnipsNLU
+    </title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body class='text-white'>
+    <div class="icon-bar">
+        <a href="https://www.linkedin.com/in/pratik-choudhari/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/pratik-choudhari" class="github"><i class="fa fa-github"></i></a>
+    </div>
+    <div class='container'>
+        <div class='margin'><span style="color:#c3073f" class="big-text">Welcome!</span></div>
+
+        <div><span class='med-text' style='color:#ffcb9a;'>Intent classification with TFKeras, stacked GRU, LSTM, BERT, and DeepPavlov frameworks written in Python.</span></div>
+        <form action="{{url_for('homepage')}}" method="POST" class='margin'>
+            <div class="form-group">
+                <label style="font-size: 150%;">Any requests, intents, wishes to ask for?</label>
+                <textarea name='command' type="text" class="form-control" disabled>{{predictions[2]}}</textarea>
+            </div>
+            <button type='submit' style='background-color:#950740;' class="text-white btn btn-default">Try again</button>
+        </form>
+        <div class="container margin">
+            {% if predictions[1]=='1' %}
+            <h2 style='color:#ffcb9a;'>I think 🤖 this is an <code>{{predictions[0]}} intent</code> and <code> does not lie within the scope of bot(might not be accurate)</code></h2>
+            {% elif predictions[1]=='0' %}
+            <h2 style='color:#ffcb9a;'>I think 🤖 this is an <code>{{predictions[0]}} intent</code> and <code>lies within the scope of bot(might not be accurate)</code></h2>
+            {% endif %}
+        </div>
+    </div>
+</body>
+
+</html>
