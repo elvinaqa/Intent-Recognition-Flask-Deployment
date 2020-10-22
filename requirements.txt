@@ -1,0 +1,9 @@
+Flask==1.0.2
+Jinja2==2.10
+imblearn==0.0
+imbalanced-learn==0.7.0
+pandas==1.0.3
+sklearn==0.0
+scikit-learn==0.23.0
+requests==2.23.0
+gunicorn==20.0.4
