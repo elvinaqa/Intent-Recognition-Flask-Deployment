@@ -4,5 +4,5 @@ Deployed a Keras Intent Recognition model, with blending of codes from Intent Re
 
 ![Main](https://github.com/elvinaqa/Intent-Recognition-Flask-Deployment/blob/main/images/sh%20(1).png)
 
-![Results](https://github.com/elvinaqa/Intent-Recognition-Flask-Deployment/blob/main/images/sh%20(2).png)
+![Results](https://github.com/elvinaqa/Intent-Recognition-Flask-Deployment/blob/main/images/Screenshot%20(322).png)
 # Coming soon!
