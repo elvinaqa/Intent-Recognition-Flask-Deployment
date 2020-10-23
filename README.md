@@ -7,3 +7,4 @@ Deployed a Keras Intent Recognition model, with blending of codes from Intent Re
 ![Res](https://github.com/elvinaqa/Intent-Recognition-Flask-Deployment/blob/main/images/sh%20(1).png)
 
 # Coming soon!
+Deployed on: https://intent-cla.herokuapp.com/
