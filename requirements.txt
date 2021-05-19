@@ -1,5 +1,5 @@
 Flask==1.0.2
-Jinja2==2.10
+Jinja2==2.11.3
 imblearn==0.0
 imbalanced-learn==0.7.0
 pandas==1.0.3
